@@ -16,7 +16,7 @@ module.exports = (env, args) => {
             "scripts/main": path.resolve("./src/bootstrap.tsx"),
         },
         output: {
-            path: path.resolve("./dist"),
+            path: path.resolve("./docs"),
         },
         target: "web",
         devtool: isProduction ? false : "source-map",
@@ -83,7 +83,7 @@ module.exports = (env, args) => {
             headers: {
                 "Access-Control-Allow-Origin": "*",
             },
-            contentBase: "./dist",
+            contentBase: "./docs",
             publicPath: "/",
             compress: false,
             port: 5000,
@@ -105,7 +105,7 @@ module.exports = (env, args) => {
                     // static files to the site root folder (index and robots)
                     {
                         from: "**/*",
-                        to: path.resolve("./dist/"),
+                        to: path.resolve("./docs/"),
                         context: "./src/static/",
                     },
                 ],
