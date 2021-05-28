@@ -22,9 +22,9 @@ export default () => {
     return (
         <div className={"home-page"}>
             <div class="header">
-                <a href="/?i=a(n-1)%20%2B%20a(n-1)%20%3B0%2C1">Fibonacci sequence</a>
+                <a href="/?i=a(n-1)%20%2B%20a(n-2)%20%3B0%2C1">Fibonacci</a>
                 <a href="/?i=if(a(n-1)%252%3D0%2C%20a(n-1)%2F2%2C%20a(n-1)*3%2B1)%20%3B19">
-                    Collatz conjecture
+                    Collatz
                 </a>
 
                 <div style="flex-grow:1;"></div>
