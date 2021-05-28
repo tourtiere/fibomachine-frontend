@@ -14,17 +14,17 @@ export default () => {
     if (!result.success) return null;
 
     return (
-        <div class="output">
-            <div class="row header" key={"headline"}>
-                <div class="index">n</div>
-                <div class="value">a(n)</div>
-            </div>
+        <table class="output">
+            <tr class="row header" key={"headline"}>
+                <td class="index">n</td>
+                <td class="value">a(n)</td>
+            </tr>
             {result.values.map((value, idx) => (
-                <div class="row" key={idx + value}>
-                    <div class="index">{idx.toString()}</div>
-                    <div class="value">{value}</div>
-                </div>
+                <tr class="row" key={idx + value}>
+                    <td class="index">{idx.toString()}</td>
+                    <td class="value">{value}</td>
+                </tr>
             ))}
-        </div>
+        </table>
     );
 };

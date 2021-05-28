@@ -2,21 +2,27 @@
     flex: 1;
     margin-top: 20px;
     overflow-y: scroll;
+    width: 100%;
 
-    .row {
+    tr,
+    th {
         flex-direction: row;
         display: flex;
         flex: 1;
         padding: 10px;
         font-family: monospace;
     }
-    .row:nth-child(even) {
+    th {
+        text-align: left;
+    }
+    tr:nth-child(even) {
         background: rgb(244, 244, 244);
     }
-    .row:nth-child(odd) {
+    tr:nth-child(odd) {
         background: #fff;
     }
     .index {
+        width: 100px;
         min-width: 100px;
     }
     .value {
