@@ -11,6 +11,9 @@ body {
     justify-content: center;
     margin: 0;
 }
+@-ms-viewport {
+    width: device-width;
+}
 
 #app {
     display: flex;
