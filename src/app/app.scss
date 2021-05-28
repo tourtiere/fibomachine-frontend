@@ -9,12 +9,15 @@ body {
     background-color: #fff;
     align-items: center;
     justify-content: center;
+    margin: 0;
 }
+
 #app {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
     flex-direction: column;
+    padding: 10px;
 }
 
 /* On screens that are 992px or less, set the background color to blue */
